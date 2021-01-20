@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name" translatable="false">Rimon Pharmacy</string>
+    <string name="save_to_csv">Save to CSV</string>
+    <string name="delete_all_counts">Delete all counts</string>
+    <string name="no_inventories">No Medicine were added</string>
+    <string name="quantity">Quantity</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="lot_code">MG</string>
+    <string name="product">Medicine</string>
+    <string name="hint_permissions">Please give permissions to create the CSV file.</string>
+    <string name="confirm_clear_all">Are you sure? This will delete all counts.</string>
+    <string name="select_product">Select Medicine</string>
+    <string name="add_new_product">Add new Medicine</string>
+    <string name="manage_products">Manage Medicine</string>
+    <string name="empty_product">The Medicine name cannot be empty.</string>
+    <string name="delete_all_products">Delete all Medicine</string>
+    <string name="add_product">Add Medicine</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="delete_products_message">This will not delete counted items, but their Medicines will be readded if you try to edit them.</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes_delete">Yes, delete</string>
+    <string name="renaming">Renaming Medicine</string>
+    <string name="edit_product">Edit Medicine</string>
+    <string name="error_no_product">Please provide a Medicine Name.</string>
+    <string name="error_no_lot_code">Please provide a Mg.</string>
+    <string name="error_no_quantity">Please provide a quantity.</string>
+    <string name="no">No</string>
+    <string name="rename_product">Rename Medicine</string>
+    <string name="rename">Rename</string>
+    <string name="unable_to_save">Unable to save CSV file.</string>
+    <string name="email_subject">Medicine Counter - Report</string>
+    <string name="chooser_title">Send email using</string>
+    <string name="error_csv">Error creating CSV file.</string>
+</resources>
