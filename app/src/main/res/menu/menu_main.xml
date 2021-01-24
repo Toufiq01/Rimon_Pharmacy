@@ -4,12 +4,6 @@
     tools:context=".view.MainActivity">
 
     <item
-        android:id="@+id/app_bar_search"
-        android:icon="@drawable/ic_search_black_24dp"
-        android:title="Search"
-        app:actionViewClass="android.widget.SearchView"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/action_clear_all"
         android:title="@string/delete_all_counts"
         android:icon="@drawable/ic_menu_delete"
