@@ -12,22 +12,29 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Adapter;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.pauloavelar.inventory.R;
 import com.pauloavelar.inventory.dao.InventoryDAO;
+import com.pauloavelar.inventory.dao.ProductDAO;
 import com.pauloavelar.inventory.model.InventoryItem;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 
@@ -64,6 +71,7 @@ public class MainActivity extends AppCompatActivity
         list.setAdapter(mAdapter);
         list.setLayoutManager(new LinearLayoutManager(this));
         list.addItemDecoration(new DividerItemDecoration(this));
+
     }
 
     @Override

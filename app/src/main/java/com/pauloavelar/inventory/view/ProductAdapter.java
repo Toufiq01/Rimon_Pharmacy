@@ -81,5 +81,4 @@ class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
         mItems = items;
         notifyDataSetChanged();
     }
-
 }

@@ -34,7 +34,7 @@ public final class InventoryDAO {
         ArrayList<InventoryItem> items = new ArrayList<>();
         SQLiteDatabase db = DbHelper.getInstance(context).getReadableDatabase();
         Cursor cursor = db.query(DbHelper.T_INVENTORY, null, null, null, null, null,
-                                 DbHelper.C_INV_TIMESTAMP + " DESC");
+                                 DbHelper.C_INV_PRODUCT + " ASC");
         while (cursor.moveToNext()) {
             items.add(new InventoryItem(
                 cursor.getLong(cursor.getColumnIndex(DbHelper.C_INV_ID)),
@@ -65,7 +65,7 @@ public final class InventoryDAO {
         String[] columns = { DbHelper.C_INV_LOT_CODE };
         String[] args = { product };
         Cursor cursor = db.query(DbHelper.T_INVENTORY, columns, DbHelper.C_INV_PRODUCT + " = ?",
-                                 args, null, null, DbHelper.C_INV_TIMESTAMP + " DESC", "1");
+                                 args, null, null, DbHelper.C_INV_PRODUCT + " ASC", "1");
 
         String lastLot = "";
         if (cursor.getCount() > 0) {
